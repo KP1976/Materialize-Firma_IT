@@ -1,0 +1,22 @@
+.header {
+  background: url("../img/tlo.jpg");
+  background-size: cover;
+  min-height: 100vh;
+}
+
+nav {
+  padding: 0 3rem;
+}
+
+.active {
+  color: #ff9831;
+  font-weight: bold;
+}
+
+.jumbotron {
+  padding-top: 10rem;
+}
+
+.section-aboutus img {
+  border: 2px solid rgba(253, 109, 37, 0.3);
+}
