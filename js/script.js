@@ -2,18 +2,11 @@ $(function() {
   // BOCZNE MENU
   $(".button-collapse").sideNav();
 
-  // ODPALENIE SCROLLA
-  const options = [
-    {
-      selector: ".navbar-fixed",
-      offset: 1200,
-      callback: function() {
-        $("nav")
-          .removeClass("transparent")
-          .addClass("blue darken-3");
-      }
-    }
-  ];
+  // PRZESUWANA KARUZELA
+  $(".carousel.carousel-slider").carousel({
+    fullWidth: true
+  });
 
-  Materialize.scrollFire(options);
+  // MENU WYBORU
+  $("select").material_select();
 });

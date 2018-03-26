@@ -1,7 +1,24 @@
 .header {
   background: url("../img/tlo.jpg");
+  background-position: center;
   background-size: cover;
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 650px;
+}
+
+.header .jumbotron {
+  padding-top: 10rem;
+}
+
+.header-small {
+  background: url("../img/tlo.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 350px;
+}
+
+.header-small .jumbotron {
+  padding-top: 2rem;
 }
 
 nav {
@@ -13,10 +30,54 @@ nav {
   font-weight: bold;
 }
 
-.jumbotron {
-  padding-top: 10rem;
-}
-
 .section-aboutus img {
   border: 2px solid rgba(253, 109, 37, 0.3);
+}
+
+.section-devs {
+  background: url("../img/coding.jpeg");
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+}
+
+.section-devs img {
+  margin-bottom: 2rem;
+}
+
+.overlay {
+  background: rgba(20, 20, 20, 0.9);
+  padding: 1rem 0;
+}
+
+.section-testimonial {
+  border-top: 5px solid rgba(253, 109, 37);
+}
+
+@media (max-width: 992px) {
+  .page-footer h5 {
+    text-align: center;
+  }
+
+  .page-footer p {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .page-footer ul {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .social-media-wrapper {
+    text-align: center;
+  }
+}
+
+@media (min-width: 993px) {
+  .page-footer .container {
+    width: 80%;
+  }
 }
