@@ -9,4 +9,7 @@ $(function() {
 
   // MENU WYBORU
   $("select").material_select();
+
+  // MODAL
+  $(".modal").modal();
 });

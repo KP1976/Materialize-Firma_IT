@@ -54,6 +54,39 @@ nav {
   border-top: 5px solid rgba(253, 109, 37);
 }
 
+input[type="text"]:not(.browser-default):focus:not([readonly]),
+input[type="email"]:not(.browser-default):focus:not([readonly]),
+input[type="password"]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #fd6d25;
+  box-shadow: 0 1px 0 0 #fd6d25;
+}
+
+input[type="text"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="email"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="password"]:not(.browser-default):focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #fd6d25;
+}
+
+.dropdown-content li span {
+  color: #fd6d25 !important;
+  font-weight: normal !important;
+}
+
+.dropdown-content li.disabled span {
+  color: rgba(0, 0, 0, 0.5) !important;
+  font-weight: normal !important;
+}
+
+.tabs .indicator {
+  background-color: #fff;
+}
+
+.modal .modal-footer {
+  text-align: center;
+}
+
 @media (max-width: 992px) {
   .page-footer h5 {
     text-align: center;
